@@ -1,0 +1,168 @@
+
+        body {
+            font-family: cursive;
+            background-color:#48026a93;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-image: url('image/Purplebackground.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            
+        }
+
+        button:hover{
+            cursor:pointer
+        }
+
+        .iniciar { 
+            background: #f484f8; color: white; 
+            border:none;
+
+        }
+        .pausar {
+            background: #af1bd0; color: white; 
+            border:none;
+            
+        }
+        
+        .resetar {
+             background: #660277; color: white; 
+             border: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px; 
+            margin: 0 auto;
+            background:linear-gradient(to right, transparent,rgb(204, 158, 248), transparent);
+           background-repeat: no-repeat;
+        }
+        
+    
+        .menu {
+            display: block;
+            text-align: left;
+            background: #9101d4;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;           
+            padding: 10px;
+            display: inline-block;
+        }
+        /* Estilos para telas menores que 768px */
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: lightgray;
+            }
+        }
+
+        
+        .musicas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 10px;
+            
+        }
+    
+        .item {
+            width: 60%;
+            background: rgb(227, 196, 255);
+            padding: 20px;           
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        /* Em telas menores que 600px, os itens ocupam 100% da largura */
+        @media screen and (max-width: 600px) {
+            .item {
+                width: 350px;
+                transition: transform 0.6s ease-in-out, top 0.1s ease-in-out;
+            }
+        }
+
+    
+    .timer {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(to top, rgb(245, 200, 270), transparent);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    min-width: 120px;
+    transition: transform 0.6s ease-in-out, top 0.1s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .timer {
+        top: auto;
+        bottom: 10px;
+        transform: translateY(0);
+    }
+
+}
+
+
+    /* Estilos para tablets */
+    @media screen and (max-width: 1024px) {
+    .menu {
+    display: block;
+    text-align: center;
+    }
+    }
+
+    .banner {
+        position: fixed;
+        transform: translateY(-50%);
+        top: 65%;
+        right: -380px;
+        width: 70%;
+        height: 50vh;
+        background-image: url('image/imagemresponsivagrande.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in;
+    }
+  
+
+    
+    @media screen and (max-width: 480px) {
+        .banner {
+            background-image: url('image/imagemresponsivapequena.png'); 
+            right: auto;
+            transform: translateX(-50%);
+            transition: all 0.8s ease-in-out;
+        }
+    }
+    
+    
+    @media screen and (max-width: 640px) {
+        .banner {
+            background-image: url('image/imagemresponsivamedia.png');
+            transition: all 0.8s ease-in-out;
+            top: 355px;
+            right: 80px;
+            transform: translateY(-35%);
+        }
+    }
+
+     @media screen and (max-width: 1024px) {
+        .banner {
+            background-image: url('image/imagemresponsivagrande.png');
+            width: 350px;
+            right: 180px;
+            transition: all 0.8s ease-in-out;
+            top: 330px;
+        }
+    }
