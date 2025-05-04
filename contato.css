@@ -1,34 +1,40 @@
 body {
     font-family: cursive;
-    background-color:#48026a93;
-    text-align: center;
-    justify-content: center;
-    background-image: url('image/Purplebackground.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-}
-
-
-.menu {
-    display: block;
-    text-align: left;
-    background: #9101d4;
-    padding: 10px;
-}
-.menu a {
-    color: white;           
-    padding: 10px;
-    display: inline-block;
-}
-/* Estilos para telas menores que 768px */
-@media screen and (max-width: 768px) {
-    body {
-        background-color: lightgray;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/Purplebackground.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
     }
-}
 
+    footer {
+        background-color: rgba(165, 76, 228, 0.9);
+        color: white;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .menu {
+        display: block;
+        text-align: left;
+        background: #9101d4;
+        padding: 10px;
+    }
+    .menu a {
+        color: white;           
+        padding: 10px;
+        display: inline-block;
+    }
+    /* Estilos para telas menores que 768px */
+    @media screen and (max-width: 768px) {
+        body {
+            background-color: lightgray;
+        }
+    }
 
 
     /* Estilos para tablets */

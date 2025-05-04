@@ -1,18 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    background-image: url('image/Purplebackground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-        body {
-            font-family: cursive;
-            background-color:#48026a93;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            background-image: url('image/Purplebackground.png');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            margin: 0;
-            position: relative;
-            
-        }
+  header {
+    font-family: cursive;
+    background-color: #c4a0f6;
+    text-align: center;
+  }
+
+.menu {
+    display: block;
+    background: #9101d4;
+    padding: 10px;
+}
+.menu a {
+    color: white;           
+    padding: 10px;
+    display: inline-block;
+}
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightgray;
+    }
+}
+.conteudo {
+    flex: 1;
+    padding: 40px 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container h1 {
+    font-family: cursive;
+    text-align: center;
+    color: #660277;
+}
+
+.container p {
+
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(165, 76, 228, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
 
         button:hover{
             cursor:pointer
@@ -42,25 +85,6 @@
            background-repeat: no-repeat;
         }
         
-    
-        .menu {
-            display: block;
-            text-align: left;
-            background: #9101d4;
-            padding: 10px;
-        }
-        .menu a {
-            color: white;           
-            padding: 10px;
-            display: inline-block;
-        }
-        /* Estilos para telas menores que 768px */
-        @media screen and (max-width: 768px) {
-            body {
-                background-color: lightgray;
-            }
-        }
-
         
         .musicas {
             display: flex;
@@ -71,13 +95,14 @@
             padding: 10px;
             
         }
-    
+
         .item {
             width: 60%;
             background: rgb(227, 196, 255);
             padding: 20px;           
-            border-radius: 5px;
+            border-radius: 50px;
             margin-bottom: 10px;
+            text-align: center;
         }
         /* Em telas menores que 600px, os itens ocupam 100% da largura */
         @media screen and (max-width: 600px) {
@@ -124,8 +149,8 @@
     .banner {
         position: fixed;
         transform: translateY(-50%);
-        top: 65%;
-        right: -380px;
+        top: 60%;
+        right: -500px;
         width: 70%;
         height: 50vh;
         background-image: url('image/imagemresponsivagrande.png');
@@ -151,7 +176,6 @@
         .banner {
             background-image: url('image/imagemresponsivamedia.png');
             transition: all 0.8s ease-in-out;
-            top: 355px;
             right: 80px;
             transform: translateY(-35%);
         }
@@ -161,8 +185,8 @@
         .banner {
             background-image: url('image/imagemresponsivagrande.png');
             width: 350px;
-            right: 180px;
             transition: all 0.8s ease-in-out;
-            top: 330px;
+          right: 100px;
+          top: 400px;
         }
     }
