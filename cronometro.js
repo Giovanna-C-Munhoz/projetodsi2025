@@ -14,15 +14,21 @@ function doisdigitos(digit){
 }
 
 function iniciar(){
+     document.getElementById('textoEstudos').innerText = "Estudando...";
+     document.getElementById('textoEstudos').classList.add("destaque");
     cronometro()
 interval= setInterval(cronometro,1000)
 }
 
 function pausar(){
+     document.getElementById('textoEstudos').innerText = "Hora de descansar!";
+     document.getElementById('textoEstudos').classList.add("destaque");
 clearInterval(interval)
 }
 
 function resetar(){
+       document.getElementById('textoEstudos').innerText = "Cronômetro para estudo:";
+         document.getElementById('textoEstudos').classList.remove("destaque");
 clearInterval(interval)
 segundo=0
 minuto=0

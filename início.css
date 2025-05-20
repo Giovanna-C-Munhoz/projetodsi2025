@@ -10,6 +10,9 @@ body {
     background-attachment: fixed;
 }
 
+ .destaque{
+color: #660277;
+ }
   header {
     font-family: cursive;
     background-color: #c4a0f6;
@@ -186,7 +189,9 @@ footer {
             background-image: url('image/imagemresponsivagrande.png');
             width: 350px;
             transition: all 0.8s ease-in-out;
-          right: 100px;
+          right: 25%;
           top: 400px;
+          opacity: 0.5;
+
         }
     }
